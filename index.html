@@ -339,6 +339,9 @@
   .svc p { margin: 0; max-width: 30em; }
   .svc .go { font-family: "Bricolage Grotesque", Arial, sans-serif; font-weight: 600; white-space: nowrap; padding-top: 4px; }
   @media (max-width: 860px) { .svc { grid-template-columns: 1fr; } .svc:hover h3 { transform: none; } }
+  .svc-demo { margin-top: clamp(20px, 3vw, 32px); padding: clamp(22px, 3vw, 34px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; }
+  .svc-demo h3 { margin: 0 0 6px; font-size: clamp(1.3rem, 2.4vw, 1.7rem); font-weight: 800; letter-spacing: -0.015em; line-height: 1.1; }
+  .svc-demo p { margin: 0; max-width: 34em; color: var(--muted); }
 
   /* ---------- Herramientas ---------- */
   .marquee { overflow: hidden; margin: 0 0 clamp(40px, 6vw, 72px); display: grid; gap: 6px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
@@ -431,6 +434,10 @@
 
   noscript p { padding: 24px; position: relative; z-index: 2; }
 </style>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -683,6 +690,13 @@
           <a class="go" href="#contact" data-topic="web" data-i18n="s_cta"></a>
         </div>
       </div>
+      <div class="svc-demo glass" data-reveal>
+        <div>
+          <h3 data-i18n="demo_h"></h3>
+          <p data-i18n="demo_d"></p>
+        </div>
+        <a class="btn-ghost" href="https://pagina-de-muestra-five.vercel.app/" target="_blank" rel="noopener" data-i18n="demo_cta"></a>
+      </div>
     </div>
   </section>
 
@@ -875,6 +889,9 @@ const I18N = {
     s3_t: "Puesta online y acompañamiento",
     s3_d: "Dejo tu sitio publicado y funcionando, listo para que tus clientes lo encuentren.",
     s_cta: "Consultar",
+    demo_h: "¿Tenés un negocio o un producto para vender?",
+    demo_d: "Mirá cómo podría quedar tu página: una tienda de muestra, con los tipos de página que ofrezco y sus precios.",
+    demo_cta: "Ver página de muestra",
     tools_h: "Herramientas",
     pipe_h: "Cómo armo y publico una página",
     pipe_p: "Estas son las herramientas que uso en cada etapa, desde la idea hasta el link que se comparte.",
@@ -946,6 +963,9 @@ const I18N = {
     s3_t: "Going online and support",
     s3_d: "I get your site published and running, ready for your customers to find.",
     s_cta: "Ask about it",
+    demo_h: "Have a business or a product to sell?",
+    demo_d: "See how your page could look: a sample store, with the page types I offer and their prices.",
+    demo_cta: "See the sample page",
     tools_h: "Toolbox",
     pipe_h: "How I build and publish a site",
     pipe_p: "These are the tools I use at each stage, from the idea to the link you share.",
