@@ -5,6 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bruno Piastrellini</title>
 <meta name="description" content="Bruno Piastrellini: desarrollador web fullstack y estudiante de Ingeniería en Informática en Mendoza, Argentina. Portafolio y contacto.">
+<link rel="canonical" href="https://portafolio-bruno-piastrellini.vercel.app/">
+<meta name="theme-color" content="#170D18" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#E3E7EA" media="(prefers-color-scheme: light)">
+
+<!-- Íconos -->
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Vista previa al compartir el link (WhatsApp, Instagram, LinkedIn, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bruno Piastrellini">
+<meta property="og:locale" content="es_AR">
+<meta property="og:url" content="https://portafolio-bruno-piastrellini.vercel.app/">
+<meta property="og:title" content="Bruno Piastrellini | Desarrollo web fullstack">
+<meta property="og:description" content="Páginas y aplicaciones web desde Mendoza, Argentina. Disponible para proyectos web y trabajo remoto.">
+<meta property="og:image" content="https://portafolio-bruno-piastrellini.vercel.app/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bruno Piastrellini, desarrollador web fullstack de Mendoza, Argentina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bruno Piastrellini | Desarrollo web fullstack">
+<meta name="twitter:description" content="Páginas y aplicaciones web desde Mendoza, Argentina. Disponible para proyectos web y trabajo remoto.">
+<meta name="twitter:image" content="https://portafolio-bruno-piastrellini.vercel.app/og-image.jpg">
 <script>document.documentElement.classList.add("js");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,6 +125,7 @@
   /* ---------- Hero ---------- */
   .hero { min-height: 92svh; display: flex; flex-direction: column; }
   .hero-body { margin-top: auto; padding-top: 110px; padding-bottom: clamp(40px, 9vh, 90px); }
+  @media (max-width: 700px) { .hero-body { padding-top: calc(185px + env(safe-area-inset-top, 0px)); } }
   h1 { margin: 0; font-size: clamp(3.3rem, 14.5vw, 11rem); font-weight: 800; font-variation-settings: "wdth" 75; line-height: 0.88; letter-spacing: -0.035em; }
   h1 span { display: block; }
   .role { margin: 28px 0 0; font-family: "Bricolage Grotesque", Arial, sans-serif; font-weight: 600; font-size: clamp(1.15rem, 2.6vw, 1.6rem); line-height: 1.25; max-width: 28em; }
@@ -328,7 +354,7 @@
   .pipe-wrap { padding: clamp(22px, 3vw, 34px); margin-bottom: clamp(24px, 3.4vw, 40px); }
   .pipe-wrap h3 { margin: 0 0 8px; font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 800; letter-spacing: -0.015em; }
   .pipe-wrap .lead { margin: 0 0 26px; color: var(--muted); max-width: 38em; }
-  .pipe { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .pipe { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .pipe li { position: relative; padding: 20px 20px 22px; border: 1px solid var(--rule); border-radius: 16px; transition: border-color .3s, transform .35s cubic-bezier(.2,.8,.2,1); }
   .pipe li:hover { border-color: var(--accent); transform: translateY(-4px); }
   .pipe li:not(:last-child)::after { content: ""; position: absolute; top: 50%; right: -21px; width: 22px; height: 2px; background: repeating-linear-gradient(90deg, var(--accent) 0 5px, transparent 5px 10px); background-size: 10px 2px; }
@@ -482,7 +508,6 @@
               <ul class="stack">
                 <li class="chip live" data-i18n="chip_live"></li>
                 <li class="chip soon" data-i18n="chip_soon"></li>
-                <li class="chip"><svg viewBox="0 0 12 16" aria-hidden="true"><rect x="1.5" y="1" width="9" height="14" rx="2"/></svg><span data-i18n="chip_mobile"></span></li>
                 <li class="chip">JavaScript</li><li class="chip">WhatsApp</li><li class="chip">Vercel</li>
               </ul>
             </div>
@@ -511,7 +536,6 @@
               <ul class="stack">
                 <li class="chip live" data-i18n="chip_live"></li>
                 <li class="chip soon" data-i18n="chip_soon"></li>
-                <li class="chip"><svg viewBox="0 0 12 16" aria-hidden="true"><rect x="1.5" y="1" width="9" height="14" rx="2"/></svg><span data-i18n="chip_mobile"></span></li>
                 <li class="chip">Astro</li><li class="chip">Vercel</li>
               </ul>
             </div>
@@ -545,7 +569,6 @@
               <ul class="stack">
                 <li class="chip live" data-i18n="chip_live"></li>
                 <li class="chip soon" data-i18n="chip_soon"></li>
-                <li class="chip"><svg viewBox="0 0 12 16" aria-hidden="true"><rect x="1.5" y="1" width="9" height="14" rx="2"/></svg><span data-i18n="chip_mobile"></span></li>
                 <li class="chip">JavaScript</li><li class="chip">Firebase</li><li class="chip">Vercel</li>
               </ul>
             </div>
@@ -674,7 +697,6 @@
         <h3 data-i18n="pipe_h"></h3>
         <p class="lead" data-i18n="pipe_p"></p>
         <ol class="pipe">
-          <li><p class="name">Claude</p><p data-i18n="pipe1"></p></li>
           <li><p class="name">Astro, Angular, Flask</p><p data-i18n="pipe2"></p></li>
           <li><p class="name">Git, GitHub, PowerShell</p><p data-i18n="pipe3"></p></li>
           <li><p class="name">Vercel, Firebase</p><p data-i18n="pipe4"></p></li>
@@ -817,11 +839,11 @@ const I18N = {
     status: "Disponible para proyectos web y trabajo remoto",
     cta_contact: "Contactarme", cta_projects: "Ver mis proyectos",
     about_h: "Sobre mí",
-    about_lit: "Construyo páginas y aplicaciones web de punta a punta: la interfaz en Angular, la lógica y los datos en el servidor. Estudio Ingeniería en Informática y publico cada proyecto para que puedas abrirlo y probarlo.",
+    about_lit: "Construyo páginas y aplicaciones web de punta a punta: la interfaz, la lógica y los datos en el servidor. Estudio Ingeniería en Informática.",
     ab1_h: "Como estudiante",
     ab1_p: "Curso el quinto año de Ingeniería en Informática en la Universidad de Mendoza. Entre las materias que ya cursé están Programación Orientada a Objetos, Bases de Datos y Sistemas Operativos y Redes. En los trabajos de cursada armé aplicaciones completas con Angular 18 y Flask.",
     ab2_h: "Como desarrollador",
-    ab2_p: "Armo sitios y aplicaciones de punta a punta: una tienda y un sistema de biblioteca para la facultad, un tracker de entrenamiento que se sincroniza entre celular y computadora, y una aplicación web de regalo para parejas y una página de ventas para un emprendimiento de salsas gourmet, las dos ya en línea. Cada proyecto lo dejo publicado para que se pueda abrir y usar.",
+    ab2_p: "Armo sitios y aplicaciones de punta a punta: una tienda y un sistema de biblioteca para la facultad, un tracker de entrenamiento que se sincroniza entre celular y computadora, una aplicación web de regalo para parejas y una página de ventas para un emprendimiento de salsas gourmet.",
     f1_k: "Base", f1_v: "Mendoza, Argentina",
     f2_k: "Estudios", f2_v: "Ingeniería en Informática, 5.º año",
     f3_k: "Foco", f3_v: "Páginas y aplicaciones web",
@@ -833,13 +855,13 @@ const I18N = {
     na_t: "No disponible para ver",
     na_d: "Este proyecto lo realicé para la facultad, por eso no está publicado en línea.",
     na_cta: "Si querés saber más, escribime",
-    chip_live: "En línea", chip_soon: "Link próximamente", chip_mobile: "Funciona en el celular", chip_acad: "Proyecto académico",
+    chip_live: "En línea", chip_soon: "Link próximamente", chip_acad: "Proyecto académico",
     p1_t: "Bruno y Lourdes", p1_k: "Aplicación web de regalo para una pareja",
-    p1_d: "Una web personalizada para regalar a una pareja, hecha a medida: pantalla de bienvenida, música de fondo, galería de viajes con fotos que se agrandan, un contador del tiempo juntos y una planta que crece con los días. Se abre desde el celular o la computadora.",
+    p1_d: "Una web personalizada para regalar a una pareja, hecha a medida: pantalla de bienvenida, música de fondo, galería de viajes con fotos que se agrandan, un contador del tiempo juntos y una planta que crece con los días.",
     p2_t: "RutinaGym Tracker", p2_k: "App web para seguir tu rutina de entrenamiento",
-    p2_d: "Una app para marcar qué sesiones de entrenamiento hiciste cada día de la semana. Se usa desde el navegador del celular, sin instalar nada, y se sincroniza en tiempo real con la computadora, donde además puede funcionar como fondo de pantalla animado en Windows.",
+    p2_d: "Una app para marcar qué sesiones de entrenamiento hiciste cada día de la semana. Se usa desde el navegador, sin instalar nada, y se sincroniza en tiempo real entre dispositivos; en la computadora además puede funcionar como fondo de pantalla animado en Windows.",
     p5_t: "A Puro Chili", p5_k: "Página de ventas para un emprendimiento de salsas gourmet",
-    p5_d: "Página de ventas a medida para una marca artesanal de Mendoza: catálogo con fotos, precios por presentación, filtro por categoría y un pedido que se arma en pantalla y se envía por WhatsApp, con acceso directo a Mercado Libre. Se adapta al celular.",
+    p5_d: "Página de ventas a medida para una marca artesanal de Mendoza: catálogo con fotos, precios por presentación, filtro por categoría y un pedido que se arma en pantalla y se envía por WhatsApp, con acceso directo a Mercado Libre.",
     p3_t: "Tienda online", p3_k: "Comercio electrónico con Angular",
     p3_d: "Proyecto de la facultad: tienda hecha con Angular 18, con inicio de sesión, roles de usuario, rutas protegidas y consumo de una API de productos.",
     p4_t: "Sistema de biblioteca", p4_k: "Gestión de biblioteca con Angular y Flask",
@@ -847,16 +869,15 @@ const I18N = {
     more_github: "Más código en mi GitHub",
     services_h: "Servicios",
     s1_t: "Páginas web para negocios y personas",
-    s1_d: "Sitios claros que se ven bien en el celular y quedan online, listos para compartir: presentación de un emprendimiento, portafolio, página personal o de un evento.",
+    s1_d: "Sitios claros que quedan online, listos para compartir: presentación de un emprendimiento, portafolio, página personal o de un evento.",
     s2_t: "Aplicaciones web a medida",
-    s2_d: "Herramientas que resuelven una tarea concreta, como un tracker, un sistema de gestión o una tienda, con la interfaz en Angular y los datos en el servidor.",
+    s2_d: "Herramientas que resuelven una tarea concreta, como un tracker, un sistema de gestión o una tienda.",
     s3_t: "Puesta online y acompañamiento",
     s3_d: "Dejo tu sitio publicado y funcionando, y te explico cómo hacer cambios para que no dependas de nadie.",
     s_cta: "Consultar",
     tools_h: "Herramientas",
     pipe_h: "Cómo armo y publico una página",
     pipe_p: "Estas son las herramientas que uso en cada etapa, desde la idea hasta el link que se comparte.",
-    pipe1: "Mi asistente de inteligencia artificial. Trabajo con él para planificar, escribir y revisar el código.",
     pipe2: "Con lo que construyo la página, según el proyecto: Astro para sitios, Angular para aplicaciones y Flask para el servidor.",
     pipe3: "Guardan el código y el historial de cambios. Subo las actualizaciones desde la terminal de Windows.",
     pipe4: "Vercel publica el sitio en internet y lo actualiza solo con cada cambio. Firebase guarda los datos y los sincroniza en tiempo real.",
@@ -889,11 +910,11 @@ const I18N = {
     status: "Available for web projects and remote work",
     cta_contact: "Contact me", cta_projects: "See my projects",
     about_h: "About me",
-    about_lit: "I build websites and web applications end to end: the interface in Angular, the logic and data on the server. I study Computer Engineering and publish every project so you can open it and try it.",
+    about_lit: "I build websites and web applications end to end: the interface, the logic and the data on the server. I study Computer Engineering.",
     ab1_h: "As a student",
     ab1_p: "I'm in my fifth year of Computer Engineering at Universidad de Mendoza. Courses I've taken include Object-Oriented Programming, Databases, and Operating Systems and Networks. In coursework I built complete applications with Angular 18 and Flask.",
     ab2_h: "As a developer",
-    ab2_p: "I build sites and applications end to end: a store and a library system for university, a training tracker that syncs between phone and computer, and a gift web app for couples and a sales page for a gourmet sauce business, both already online. I publish every project so it can be opened and used.",
+    ab2_p: "I build sites and applications end to end: a store and a library system for university, a training tracker that syncs between phone and computer, a gift web app for couples and a sales page for a gourmet sauce business.",
     f1_k: "Based in", f1_v: "Mendoza, Argentina",
     f2_k: "Studies", f2_v: "Computer Engineering, 5th year",
     f3_k: "Focus", f3_v: "Websites and web applications",
@@ -905,13 +926,13 @@ const I18N = {
     na_t: "Not available to view",
     na_d: "I built this project for university, so it isn't published online.",
     na_cta: "Want to know more? Write to me",
-    chip_live: "Online", chip_soon: "Link coming soon", chip_mobile: "Works on mobile", chip_acad: "Academic project",
+    chip_live: "Online", chip_soon: "Link coming soon", chip_acad: "Academic project",
     p1_t: "Bruno y Lourdes", p1_k: "Gift web app for a couple",
-    p1_d: "A custom-made personalized web gift for a couple: welcome screen, background music, a trip gallery with photos that enlarge, a counter of time together and a plant that grows with the days. It opens on phone or computer.",
+    p1_d: "A custom-made personalized web gift for a couple: welcome screen, background music, a trip gallery with photos that enlarge, a counter of time together and a plant that grows with the days.",
     p2_t: "RutinaGym Tracker", p2_k: "Web app to track your training routine",
-    p2_d: "An app to mark which training sessions you did each day of the week. You use it from your phone's browser, with nothing to install, and it syncs in real time with your computer, where it can also work as an animated wallpaper on Windows.",
+    p2_d: "An app to mark which training sessions you did each day of the week. You use it from the browser, with nothing to install, and it syncs in real time across devices; on the computer it can also work as an animated wallpaper on Windows.",
     p5_t: "A Puro Chili", p5_k: "Sales page for a gourmet sauce business",
-    p5_d: "A custom sales page for a craft food brand from Mendoza: photo catalog, prices per size, category filter and an order you build on screen and send by WhatsApp, with direct links to Mercado Libre. It adapts to phones.",
+    p5_d: "A custom sales page for a craft food brand from Mendoza: photo catalog, prices per size, category filter and an order you build on screen and send by WhatsApp, with direct links to Mercado Libre.",
     p3_t: "Online store", p3_k: "E-commerce with Angular",
     p3_d: "University project: a store built with Angular 18, with login, user roles, protected routes and a products API.",
     p4_t: "Library system", p4_k: "Library management with Angular and Flask",
@@ -919,16 +940,15 @@ const I18N = {
     more_github: "More code on my GitHub",
     services_h: "Services",
     s1_t: "Websites for businesses and people",
-    s1_d: "Clear sites that look good on a phone and go online ready to share: a business presentation, a portfolio, a personal or event page.",
+    s1_d: "Clear sites that go online ready to share: a business presentation, a portfolio, a personal or event page.",
     s2_t: "Custom web applications",
-    s2_d: "Tools that solve one concrete task, like a tracker, a management system or a store, with the interface in Angular and the data on the server.",
+    s2_d: "Tools that solve one concrete task, like a tracker, a management system or a store.",
     s3_t: "Going online and support",
     s3_d: "I get your site published and running, and show you how to make changes so you don't depend on anyone.",
     s_cta: "Ask about it",
     tools_h: "Toolbox",
     pipe_h: "How I build and publish a site",
     pipe_p: "These are the tools I use at each stage, from the idea to the link you share.",
-    pipe1: "My artificial intelligence assistant. I work with it to plan, write and review code.",
     pipe2: "What I build the site with, depending on the project: Astro for websites, Angular for applications and Flask for the server.",
     pipe3: "They store the code and its change history. I push updates from the Windows terminal.",
     pipe4: "Vercel publishes the site on the internet and updates it automatically with every change. Firebase stores the data and syncs it in real time.",
@@ -1287,6 +1307,7 @@ document.querySelectorAll(".lang button").forEach(function (b) {
   const LEVEL_START = 0.22;
   const LEVEL_STEP = 0.04;
   const NOISE_SCALE = 520;
+  const SPEED = finePointer ? 1 : 5; /* en celular el fondo se desplaza más rápido para que se note */
 
   let W = 0, H = 0, dpr = 1, cols = 0, rows = 0, cell = 14, field = null;
   let colors = { minor: "rgba(62,106,148,.34)", major: "rgba(138,31,85,.62)" };
@@ -1316,7 +1337,7 @@ document.querySelectorAll(".lang button").forEach(function (b) {
     return 0.55 * vnoise(x, y) + 0.3 * vnoise(x * 2.1 + 5.2, y * 2.1 + 1.3) + 0.15 * vnoise(x * 4.3 + 9.1, y * 4.3 + 3.7);
   }
   function height(px, py, t, amp) {
-    const n = fbm(px / NOISE_SCALE + t * 0.012, (py + sy * 0.45) / NOISE_SCALE + t * 0.006);
+    const n = fbm(px / NOISE_SCALE + t * 0.012 * SPEED, (py + sy * 0.45) / NOISE_SCALE + t * 0.006 * SPEED);
     let v = 0.5 + (n - 0.5) * 1.7 * amp;
     if (mouse.s > 0.001) {
       const dx = px - mouse.x, dy = py - mouse.y;
@@ -1416,6 +1437,8 @@ document.querySelectorAll(".lang button").forEach(function (b) {
     mouse.tx = e.clientX; mouse.ty = e.clientY; mouse.target = 1;
   }, { passive: true });
   document.documentElement.addEventListener("pointerleave", function () { mouse.target = 0; });
+  window.addEventListener("pointerup", function (e) { if (e.pointerType !== "mouse") mouse.target = 0; }, { passive: true });
+  window.addEventListener("pointercancel", function () { mouse.target = 0; }, { passive: true });
   window.addEventListener("blur", function () { mouse.target = 0; });
 
   window.addEventListener("resize", resize);
